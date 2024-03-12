@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Custom software application development, delivered fast."
+    />
+    <meta
+      name="keywords"
+      content="react, react native, POC, MVP, software shop, javascript, web development, app development, website development, software shop, react development, react native development, poc development, mvp development, web development, mobile app development, custom software development, software prototyping, rapid prototyping, agile software development, frontend development, backend development, full stack development, ui/ux design, product development, software engineering, software consulting, tech prototyping, innovative prototypes, prototyping services, custom app development, javascript development, node.js development, cross-platform development, ios app development, android app development, hybrid app development, progressive web apps (pwa), app design, app prototyping, web prototyping, mobile prototyping, digital prototyping, app wireframing, app testing, app deployment, startup mvp, lean development, scalable solutions, cloud integration, api development, modern web applications, tech solutions, emerging technologies, software innovation, tech startups, innovative software solutions, product design and development, business software development, prototype testing, tech trends, mobile technology, web technology, it consulting, digital transformation, industry 4.0 solutions"
+    />
+    <meta name="author" content="Fast Cycle" />
+
+    <!-- Facebook Meta Tags -->
+    <!-- <meta property="og:title" content="Your Company Name">
+    <meta property="og:description" content="Your brief description here.">
+    <meta property="og:image" content="https://example.com/your-image.jpg">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:type" content="website"> -->
+
+    <!-- Twitter Meta Tags -->
+    <!-- <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Your Company Name">
+    <meta property="twitter:description" content="Your brief description here.">
+    <meta property="twitter:image" content="https://example.com/your-image.jpg"> -->
+
+    <title>Fast Cycle</title>
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bad+Script|Gruppo|Kumar+One+Outline|League+Script|Londrina+Outline|Monoton|Sriracha|Yellowtail&amp;text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <x-sign> (this) is under construction... </x-sign>
+    <x-sign> FASTCYCLE </x-sign>
+    <x-sign> Come back soon ♡ </x-sign>
+
+    <script>
+      const signs = document.querySelectorAll("x-sign");
+      const randomIn = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1) + min);
+
+      const mixupInterval = (el) => {
+        const ms = randomIn(1000, 2000);
+        el.style.setProperty("--interval", `${ms}ms`);
+      };
+
+      signs.forEach((el) => {
+        mixupInterval(el);
+        el.addEventListener("webkitAnimationIteration", () => {
+          mixupInterval(el);
+        });
+      });
+    </script>
+  </body>
+</html>
